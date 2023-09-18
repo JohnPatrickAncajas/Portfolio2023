@@ -1,0 +1,154 @@
+html {
+    scroll-behavior: smooth;
+}
+
+[v-cloak] {
+    display: none
+}
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #EDEDED;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    body {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1201px) {
+    body {
+        font-size: 24px;
+    }
+}
+header {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    place-items: center;
+}
+
+header img {
+    width: 20vw;
+    height: auto;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    border: 5px solid #0047AB;
+    border-radius: 5%;
+}
+
+header div {
+    flex-direction: column;
+}
+
+@media (max-width: 575.98px) {
+    header {
+        flex-direction: column;
+    }
+
+    header img {
+        width: 30vw;
+    }
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100vw;
+    height: auto;
+    background-color: #0047AB;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    padding: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+main {
+    text-align: justify;
+    margin-top: 1rem;
+}
+
+main p{
+    padding: 1rem;
+}
+
+section li {
+    width: 95vw;
+    margin: auto;
+    text-align: center;
+    color: #f0f0f0;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+#project1 {
+    background-color:  #1F4777;
+}
+
+#project2 {
+    background-color: #2B5AAB;
+}
+
+#project3 {
+    background-color: #3366CC;
+}
+
+section h3 {
+    padding-bottom: 1rem;
+}
+
+footer {
+    justify-content: center;
+    font-size: 130%;
+    margin-top: 1rem;
+    padding: 1rem;
+    color: #f0f0f0;
+    background-color: #002D6E;
+}
+
+footer ul {
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
