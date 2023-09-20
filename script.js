@@ -11,10 +11,15 @@ const { createApp, ref } = Vue
 
 window.onload = function() {
     
-    var nav = document.querySelector('nav');
+  var nav = document.querySelector('nav');
 
-    var navHeight = nav.offsetHeight + 20;
+  var header = document.querySelector('header');
 
-    var header = document.querySelector('.header');
-    header.style.marginTop = navHeight + 'px';
+  var navHeight = nav.offsetHeight;
+
+  var navHeightVh = (navHeight / window.innerHeight) * 100;
+
+  var navNewHeightVh = navHeightVh + 2;
+
+  header.style.marginTop = (navNewHeightVh * window.innerHeight) / 100 + "px";
 };
