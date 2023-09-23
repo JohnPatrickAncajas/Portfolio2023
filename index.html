@@ -13,14 +13,6 @@
 <body>
     <div id="app" v-cloak>
 
-        <header class="header">
-            <img src="Profile.jpg" alt="Picture of Patrick Ancajas"/>
-            <div>
-                <h1 class="display-1">Patrick Ancajas</h1>
-                <p class="display-6">Computer Science Student</p>
-            </div>
-        </header>
-
         <nav class="nav">
             <ul>
                 <li><a href="#about">About</a></li>
@@ -28,6 +20,14 @@
                 <li><a href="#education">Education</a></li>
             </ul>
         </nav>
+
+        <header class="header">
+            <img src="Profile.jpg" alt="Picture of Patrick Ancajas"/>
+            <div>
+                <h1 class="display-1">Patrick Ancajas</h1>
+                <p class="display-6">Computer Science Student</p>
+            </div>
+        </header>
 
         <main id="about">
             <hr>
@@ -57,18 +57,18 @@
         <section id="education">
             <hr>
             <h2 class="display-6">Education!</h2>
-            <ul>
-                <li id="project1">
-                    <h3>Portfolio (2023 - 2024)</h3>
-                    <p>A project made using HTML, CSS and JavaScript with the help of Bootstrap library and Vue framework.</p>
+            <ul class="list-inline" id="education-list">
+                <li class="list-inline-item" id="school1">
+                    <h3>Senior Highschool</h3>
+                    <p>San Diego Parochial School</p>
                 </li>
-                <li id="project2">
-                    <h3>Addventure (2023 - 2024)</h3>
-                    <p>A capstone project designed to be similar to an educational game made using HTML, CSS and JavaScript.</p>
+                <li class="list-inline-item" id="school2">
+                    <h3>Highschool</h3>
+                    <p>Obando National Highschool</p>
                 </li>
-                <li id="project3">
-                    <h3>FARO (2023 - 2024)</h3>
-                    <p>A fantasy adventure game created using HTML, CSS and JavaScript.</p>
+                <li class="list-inline-item" id="school3">
+                    <h3>Elementary</h3>
+                    <p>Obando Central School</p>
                 </li>
             </ul>
         </section>
