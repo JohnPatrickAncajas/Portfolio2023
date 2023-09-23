@@ -160,6 +160,7 @@ section h3 {
     display: flex;
     margin: auto;
     list-style: none;
+    align-items: stretch;
 }
 
 #education-list li {
@@ -176,18 +177,21 @@ section h3 {
 }
 
 #school1 {
+    height: auto;
     background-color: #05e8ba;
     background-image: linear-gradient(315deg, #05e8ba 0%, #087ee1 74%);
     
 }
 
 #school2 {
+    height: auto;
     background-color: #05e8ba;
     background-image: linear-gradient(315deg, #05e8ba 0%, #087ee1 74%);
     
 }
 
 #school3 {
+    height: auto;
     background-color: #05e8ba;
     background-image: linear-gradient(315deg, #05e8ba 0%, #087ee1 74%);
     
