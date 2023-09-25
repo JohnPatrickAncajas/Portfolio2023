@@ -135,6 +135,15 @@ section li {
     border-radius: 1rem;
     padding: 1rem;
     margin-top: 1rem;
+    list-style: none;
+}
+
+#project1Details {
+    text-align: justify;
+}
+
+#project1Details ul li{
+    margin-bottom: 1rem;
 }
 
 section h3 {
@@ -159,7 +168,6 @@ section h3 {
 #education-list {
     display: flex;
     margin: auto;
-    list-style: none;
     align-items: stretch;
 }
 
