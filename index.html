@@ -9,11 +9,9 @@
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#007bff">
     <title>Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    <link rel="stylesheet" href="styles.css">
     <script defer src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <script defer src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    <script defer src="script.js"></script>
 </head>
 <body>
     <div id="app" v-cloak>
@@ -36,13 +34,13 @@
 
         <main id="about">
             <hr>
-            <h2 class="display-6">About me!</h2>
+            <h2 class="display-6"><strong>About me!</strong></h2>
             <p> I'm a freshman computer science student training to be a full stack web developer! Now studying HTML, CSS and JavaScript to create a responsive portfolio webpage with the help of Bootstrap and Vue. Also learning C and Python to help me in my college studies!<br><br> My skils are specialized for problem solving and critical thinking! Favorite hobbies include learning and coding! I believe that time is a treasure we cannot replace, so to use it wisely is a man's best interest!</p>
         </main>
         
         <section id="experience">
             <hr>
-            <h2 class="display-6">Experience!</h2>
+            <h2 class="display-6"><strong>Experience!</strong></h2>
             <ul>
                 <li id="project1" data-bs-toggle="collapse" href="#project1Details">
                     <h3><strong>Portfolio</strong> (2023 - 2024)</h3>
@@ -74,19 +72,80 @@
 
         <section id="education">
             <hr>
-            <h2 class="display-6">Education!</h2>
+            <h2 class="display-6"><strong>Education!</strong></h2>
             <ul class="list-inline" id="education-list">
-                <li  class="list-inline-item" id="school1">
-                    <h3>Senior Highschool</h3>
+                <li class="list-inline-item" data-bs-toggle="modal" data-bs-target="#school1Modal" id="school1">
+                    <h3><strong>Senior Highschool</strong></h3>
                     <p>San Diego Parochial School</p>
+                    <div class="modal fade" id="school1Modal" tabindex="-1" aria-labelledby="school1ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content" id="school1ModalContent">
+                                <div class="modal-header">
+                                    <h1 class="modal-title" id="school1ModalLabel">Senior Highschool</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="fs-3">San Diego Parochial School<br><br></p>
+                                    <ul class="modalList">
+                                        <p class="fs-4">With Honors</p>
+                                        <p>Achieved an average grade of 92 with no grade below 85 in any subject during grade 12.<br><br></p>
+                                        <p>Best in Mathematics</p>
+                                        <p><br></p>
+                                        <p>Math Society President</p>
+                                        <p></p>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </li>
-                <li class="list-inline-item" id="school2">
-                    <h3>Highschool</h3>
+                <li class="list-inline-item" data-bs-toggle="modal" data-bs-target="#school2Modal" id="school2">
+                    <h3><strong>Highschool</strong></h3>
                     <p>Obando National Highschool</p>
+                    <div class="modal fade" id="school2Modal" tabindex="-1" aria-labelledby="school2ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content" id="school2ModalContent">
+                                <div class="modal-header">
+                                    <h1 class="modal-title" id="school2ModalLabel">Highschool</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="fs-3">Obando National Highschool<br><br></p>
+                                    <p>2 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero tempore nam laudantium nostrum neque impedit asperiores cumque quia, quo earum facere esse quaerat aliquam labore illo vitae perspiciatis cum eum.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</butto>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </li>
-                <li class="list-inline-item" id="school3">
-                    <h3>Elementary</h3>
+                <li class="list-inline-item" data-bs-toggle="modal" data-bs-target="#school3Modal" id="school3">
+                    <h3><strong>Elementary</strong></h3>
                     <p>Obando Central School</p>
+                    <div class="modal fade" id="school3Modal" tabindex="-1" aria-labelledby="school3ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content" id="school3ModalContent">
+                                <div class="modal-header">
+                                    <h1 class="modal-title" id="school3ModalLabel">Elementary</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="fs-3">Obando Central School<br><br></p>
+                                    <p>3 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero tempore nam laudantium nostrum neque impedit asperiores cumque quia, quo earum facere esse quaerat aliquam labore illo vitae perspiciatis cum eum.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</butto>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </section>
