@@ -138,29 +138,15 @@ section li {
     list-style: none;
 }
 
-#project1Details {
+#project1Details, #project2Details, #project3Details {
     text-align: justify;
-}
-
-#project1Details ul li{
-    margin-bottom: 1rem;
 }
 
 section h3 {
     padding-bottom: 1rem;
 }
 
-#project1 {
-    background-color: #045de9;
-    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
-}
-
-#project2 {
-    background-color: #045de9;
-    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
-}
-
-#project3 {
+#project1, #project2, #project3 {
     background-color: #045de9;
     background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
 }
@@ -184,21 +170,7 @@ section h3 {
     }
 }
 
-#school1 {
-    height: auto;
-    background-color: #05e8ba;
-    background-image: linear-gradient(315deg, #05e8ba 0%, #087ee1 74%);
-    
-}
-
-#school2 {
-    height: auto;
-    background-color: #05e8ba;
-    background-image: linear-gradient(315deg, #05e8ba 0%, #087ee1 74%);
-    
-}
-
-#school3 {
+#school1, #school2, #school3 {
     height: auto;
     background-color: #05e8ba;
     background-image: linear-gradient(315deg, #05e8ba 0%, #087ee1 74%);
