@@ -3,8 +3,10 @@ html {
 }
 
 [v-cloak] {
-    display: none
+    display: none;
 }
+
+/* Global styles */
 
 body, h1, h2, h3, p, ul, li {
     margin: 0;
@@ -12,8 +14,7 @@ body, h1, h2, h3, p, ul, li {
 }
 
 body {
-    background-color: #e7eff9;
-    background-image: linear-gradient(315deg, #e7eff9 0%, #cfd6e6 74%);
+    background: linear-gradient(315deg, #e7eff9 0%, #cfd6e6 74%);
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     font-size: 16px;
@@ -43,17 +44,19 @@ body {
     }
 }
 
+/* Header styles */
+
 header {
+    display: flex;
     justify-content: center;
     text-align: center;
-    display: flex;
-    place-items: center;
+    align-items: center;
 }
 
 header img {
     width: 20vw;
     height: auto;
-    margin: 1vh 1vw 1vh 1vw;
+    margin: 1vh 1vw;
     object-fit: contain;
     max-width: 100%;
     max-height: 100%;
@@ -67,6 +70,7 @@ header img:hover {
 }
 
 header div {
+    display: flex;
     flex-direction: column;
 }
 
@@ -81,15 +85,15 @@ header div {
     }
 }
 
+/* Navigation styles */
+
 nav {
     position: fixed;
     top: 0;
     left: 0;
     display: flex;
     width: 100vw;
-    height: auto;
-    background-color: #0abcf9;
-    background-image: linear-gradient(315deg, #0abcf9 0%, #2c69d1 74%);
+    background: linear-gradient(315deg, #0abcf9 0%, #2c69d1 74%);
     padding: 1rem;
     z-index: 1000;
 }
@@ -112,6 +116,8 @@ nav a:hover {
     text-decoration: none;
 }
 
+/* Main content styles */
+
 main {
     text-align: justify;
     margin-top: 1rem;
@@ -120,6 +126,8 @@ main {
 main p {
     padding: 1rem;
 }
+
+/* Section styles */
 
 section {
     color: #000000;
@@ -137,19 +145,22 @@ section li {
     list-style: none;
 }
 
-#project1Details, #project2Details, #project3Details {
-    text-align: justify;
-}
-
 section h3 {
     padding-bottom: 1rem;
 }
 
+/* Project styles */
+
 #project1, #project2, #project3 {
-    background-color: #045de9;
-    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+    background: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
     cursor: pointer;
 }
+
+#project1Details, #project2Details, #project3Details {
+    text-align: justify;
+}
+
+/* Education list styles */
 
 #education-list {
     display: flex;
@@ -161,7 +172,6 @@ section h3 {
     border-radius: 1rem;
     margin-left: 1vw;
     margin-right: 1vw;
-    background-color: #3366CC;
     background-color: #e7eff9;
 }
 
@@ -173,8 +183,7 @@ section h3 {
 
 #school1, #school2, #school3 {
     height: auto;
-    background-color: #05e8ba;
-    background-image: linear-gradient(315deg, #05e8ba 0%, #087ee1 74%);
+    background: linear-gradient(315deg, #05e8ba 0%, #087ee1 74%);
     cursor: pointer;
 }
 
@@ -182,14 +191,31 @@ section h3 {
     color: #000000;
 }
 
+/* Modal styles */
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-body p {
+    text-align: center;
+}
+
+.blockquote-footer {
+    background: none;
+}
+
+/* Footer styles */
+
 footer {
+    display: flex;
     justify-content: center;
     font-size: 130%;
     margin-top: 1rem;
     padding: 1rem;
     color: #f0f0f0;
-    background-color: #0abcf9;
-    background-image: linear-gradient(315deg, #0abcf9 0%, #2c69d1 74%);
+    background: linear-gradient(315deg, #0abcf9 0%, #2c69d1 74%);
 }
 
 footer ul {
