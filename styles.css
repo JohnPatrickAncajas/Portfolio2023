@@ -149,6 +149,12 @@ section h3 {
     padding-bottom: 1rem;
 }
 
+.sectionText {
+    text-align: justify;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
 /* Project styles */
 
 #project1, #project2, #project3 {
