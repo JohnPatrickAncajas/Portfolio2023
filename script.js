@@ -46,3 +46,45 @@ createApp({
     });
   },
 }).mount('#app');
+
+function scrollToAbout() {
+  let element = document.querySelector('#about');
+  let nav = document.querySelector('nav');
+  let offset = nav.offsetHeight;
+
+  if (element) {
+    const top = element.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({
+      top: top - offset,
+      behavior: "smooth",
+    });
+  }
+}
+
+function scrollToExperience() {
+  let element = document.querySelector('#experience');
+  let nav = document.querySelector('nav');
+  let offset = nav.offsetHeight;
+
+  if (element) {
+    const top = element.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({
+      top: top - offset,
+      behavior: "smooth",
+    });
+  }
+}
+
+function scrollToEducation() {
+  let element = document.querySelector('#education');
+  let nav = document.querySelector('nav');
+  let offset = nav.offsetHeight;
+
+  if (element) {
+    const top = element.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({
+      top: top - offset,
+      behavior: "smooth",
+    });
+  }
+}
