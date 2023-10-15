@@ -1,8 +1,12 @@
+// This code deals header margin-top, div height and scrolling adjustment
+
 const { createApp, onMounted, ref } = Vue;
 
 createApp({
   setup() {
     const navHeight = ref(0);
+
+    // This part is about responsive header margin-top
 
     const updateHeaderMargin = () => {
       let nav = document.querySelector('nav');
@@ -15,6 +19,8 @@ createApp({
       }, 100);
     };
     
+    // This part is about responsive div height
+
     const updateSchoolHeights = () => {
       let school1 = document.querySelector('#school1');
       let school2 = document.querySelector('#school2');
@@ -37,15 +43,7 @@ createApp({
       }, 100);
     };
 
-    onMounted(() => {
-      updateHeaderMargin();
-      updateSchoolHeights();
-    });
-
-    window.addEventListener('resize', () => {
-      updateHeaderMargin();
-      updateSchoolHeights();
-    });
+    // This part is about scrolling adjustment
 
     const scrollToSection = (sectionId) => {
       let element = document.querySelector(sectionId);
@@ -58,6 +56,18 @@ createApp({
         });
       }
     };
+
+    // This part deals with mounting, event listening (resize) and return value
+
+    onMounted(() => {
+      updateHeaderMargin();
+      updateSchoolHeights();
+    });
+
+    window.addEventListener('resize', () => {
+      updateHeaderMargin();
+      updateSchoolHeights();
+    });
 
     return {
       scrollToAbout: () => scrollToSection('#about'),

@@ -7,42 +7,53 @@
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
+    font-family: Georgia, serif;
 }
 
 body {
     background: linear-gradient(315deg, #e7eff9 0%, #cfd6e6 74%);
-    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     font-size: 16px;
 }
 
-.indent {
-    margin-left: 0rem;
-}
-
+a {
+    color: #f0f0f0;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+a:hover {
+    color: #f0f0f094;
+  }
+  
 @media (min-width: 576px) and (max-width: 768px) {
     body {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .indent {
         margin-left: 2rem;
     }
+    
+    #education-list {
+        flex-direction: column;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
     body {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .indent {
         margin-left: 3rem;
     }
+    
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
     body {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .indent {
@@ -52,7 +63,7 @@ body {
 
 @media (min-width: 1201px) {
     body {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .indent {
@@ -123,15 +134,6 @@ nav li {
     padding: 1rem;
 }
 
-nav a {
-    text-decoration: none;
-    color: #f0f0f0;
-}
-
-nav a:hover {
-    text-decoration: none;
-}
-
 /* Main content styles */
 
 main {
@@ -150,7 +152,7 @@ section {
 }
 
 section li {
-    width: 95vw;
+    width: 90vw;
     height: auto;
     margin: auto;
     text-align: center;
@@ -162,12 +164,16 @@ section li {
 }
 
 section h3 {
+    font-weight: lighter;
     padding-bottom: 1rem;
 }
 
 .sectionText {
+    width: 90vw;
+    color: #000000dc;
+    margin: auto;
     text-align: justify;
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 /* Project styles */
@@ -185,26 +191,23 @@ section h3 {
 /* Education list styles */
 
 #education-list {
+    width: 90vw;
     display: flex;
     margin: auto;
-    align-items: stretch;
 }
 
 #education-list li {
     border-radius: 1rem;
-    margin-left: 1vw;
-    margin-right: 1vw;
     background-color: #e7eff9;
 }
 
 @media (max-width: 575.98px) {
     #education-list {
-        display: inline;
+        flex-direction: column;
     }
 }
 
 #school1, #school2, #school3 {
-    height: auto;
     background-color: #3b68c5;
     background-image: linear-gradient(315deg, #3b68c5 0%, #2752a2 74%);    
     cursor: pointer;
@@ -243,9 +246,4 @@ footer {
 
 footer ul {
     text-align: center;
-}
-
-footer a {
-    text-decoration: none;
-    color: inherit;
 }

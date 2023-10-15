@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,8 +16,11 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>   
     <script defer src="script.js"></script>
 </head>
+
 <body>
     <div id="app" v-cloak>
+
+        <!-- This is the Navigation section -->
 
         <nav class="nav">
             <ul>
@@ -26,20 +30,26 @@
             </ul>
         </nav>
 
+        <!-- This is the Main section -->
+
         <header class="header">
-            <img id="profile" src="Profile.webp" alt="Picture of Patrick Ancajas"/>
+            <img id="profile" src="assets/Profile.webp" alt="Picture of Patrick Ancajas"/>
             <div>
                 <h1 class="display-1">Patrick Ancajas</h1>
                 <p class="display-6">Computer Science Student</p>
             </div>
         </header>
 
+        <!-- This is the About section -->
+
         <main id="about">
             <hr>
             <h2 class="display-6"><strong>About me!</strong></h2>
-            <p><span class="indent"></span>As a freshman computer science student striving to become a full-stack web developer, I'm actively engaged in mastering HTML, CSS, JavaScript, and utilizing tools like Bootstrap and Vue to create responsive webpages to improve my skills!<br><br><span class="indent"></span>I'm also dedicated to gaining proficiency in C and Python to enhance my academic pursuits. My strengths lie in problem solving and critical thinking, and I have an enduring enthusiasm for learning and coding. Recognizing the irreplaceable value of time, I am committed to making the most of every moment.</p>
+            <p class="sectionText"><span class="indent"></span>As a freshman computer science student striving to become a full-stack web developer, I'm actively engaged in mastering HTML, CSS, JavaScript, and utilizing tools like Bootstrap and Vue to create responsive webpages to improve my skills!<br><br><span class="indent"></span>I'm also dedicated to gaining proficiency in C and Python to enhance my academic pursuits. My strengths lie in problem solving and critical thinking, and I have an enduring enthusiasm for learning and coding. Recognizing the irreplaceable value of time, I am committed to making the most of every moment.</p>
         </main>
         
+        <!-- This is the Experience section -->
+
         <section id="experience">
             <hr>
             <h2 class="display-6"><strong>My Experience!</strong></h2>
@@ -72,20 +82,27 @@
             <p class="sectionText"><span class="indent"></span>Through my life experiences, I've acquired a wealth of skills and honed my abilities, which have significantly shaped me as an individual. The challenges I've faced and the triumphs I've celebrated have not only equipped me with knowledge but also fostered resilience and adaptability. This journey of learning and growth has been instrumental in defining who I am today.</p>
         </section>
 
+        <!-- This is the Education section -->
+
         <section id="education">
             <hr>
             <h2 class="display-6"><strong>My Education!</strong></h2>
             <ul class="list-inline" id="education-list">
+
+                <!-- This is the first school modal -->
+
                 <li class="list-inline-item" data-bs-toggle="modal" data-bs-target="#school1Modal" id="school1">
                     <h3><strong>Senior Highschool</strong></h3>
                     <p>San Diego Parochial School</p>
                     <div class="modal fade" id="school1Modal" tabindex="-1" aria-labelledby="school1ModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+
                             <div class="modal-content" id="school3ModalContent">
                                 <div class="modal-header">
                                     <h1 class="modal-title" id="school1ModalLabel">Senior Highschool</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
+
                                 <div class="modal-body">
                                     <h1 class="display-6"><strong>San Diego Parochial School</strong><br><br></h1>
                                     <ul class="modalList">
@@ -99,6 +116,7 @@
                                         <p>Elected as the President of the Math Club called Math Society during grade 12.<br><br></p>
                                     </ul>
                                 </div>
+
                                 <div class="modal-footer">
                                     <blockquote class="blockquote text-center">
                                         <p class="mb-0">"The youth is the hope of our future."</p>
@@ -106,19 +124,25 @@
                                     </blockquote>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </li>
+
+                <!-- This is the second school modal -->
+
                 <li class="list-inline-item" data-bs-toggle="modal" data-bs-target="#school2Modal" id="school2">
                     <h3><strong>Highschool</strong></h3>
                     <p>Obando National Highschool</p>
                     <div class="modal fade" id="school2Modal" tabindex="-1" aria-labelledby="school2ModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+
                             <div class="modal-content" id="school3ModalContent">
                                 <div class="modal-header">
                                     <h1 class="modal-title" id="school2ModalLabel">Highschool</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
+                                
                                 <div class="modal-body">
                                     <h1 class="display-6"><strong>Obando National Highschool</strong><br><br></h1>
                                     <ul class="modalList">
@@ -139,6 +163,7 @@
                                         <p>Elected as an officer of the Student Government during grade 7 and 8.<br><br></p>
                                     </ul>
                                 </div>
+
                                 <div class="modal-footer">
                                     <blockquote class="blockquote text-center">
                                         <p class="mb-0">"In the chaos of adolescence, life finds its rhythm."</p>
@@ -146,19 +171,25 @@
                                     </blockquote>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </li>
+
+                <!-- This is the third school modal -->
+
                 <li class="list-inline-item" data-bs-toggle="modal" data-bs-target="#school3Modal" id="school3">
                     <h3><strong>Elementary</strong></h3>
                     <p>Obando Central School</p>
                     <div class="modal fade" id="school3Modal" tabindex="-1" aria-labelledby="school3ModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+
                             <div class="modal-content" id="school3ModalContent">
                                 <div class="modal-header">
                                     <h1 class="modal-title" id="school3ModalLabel">Elementary</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
+
                                 <div class="modal-body">
                                     <h1 class="display-6"><strong>Obando Central School</strong><br><br></h1>
                                     <ul class="modalList">
@@ -170,6 +201,7 @@
                                         <p>Elected as the President of the Math Club during grade 6.<br><br></p>
                                     </ul>
                                 </div>
+
                                 <div class="modal-footer">
                                     <blockquote class="blockquote text-center">
                                         <p class="mb-0">"Childhood is where the seeds of dreams are planted."</p>
@@ -177,6 +209,7 @@
                                     </blockquote>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </li>
@@ -184,13 +217,15 @@
             <p class="sectionText"><span class="indent"></span>Education has been instrumental in cultivating my skills and abilities and has played a crucial role in shaping my character. The knowledge and insights gained through formal learning have not only equipped me with a diverse set of tools but have also nurtured critical thinking and problem-solving skills. The educational journey has contributed significantly to my personal development, providing me with a strong foundation for growth and success.</p>
         </section>
 
+        <!-- This is the footer section -->
+
         <footer>
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100082552025420&mibextid=2JQ9oc">Facebook</a></li>
                 <li class="list-inline-item"><p>|</p></li>
-                <li class="list-inline-item"><p>Phone</p></li>
+                <li class="list-inline-item"><a id="Github" href="https://github.com/JohnPatrickAncajas">Github</a></li>
                 <li class="list-inline-item"><p>|</p></li>
-                <li class="list-inline-item"><p>Email</p></li>
+                <li class="list-inline-item"><a id="LinkedIn" href="https://www.linkedin.com/in/john-patrick-ancajas-2b808828a">LinkedIn</a></li>
             </ul>
         </footer>
     </div>
