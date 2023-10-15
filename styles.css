@@ -182,7 +182,13 @@ section h3 {
     background-color: #3b68c5;
     background-image: linear-gradient(315deg, #3b68c5 0%, #2752a2 74%);    
     cursor: pointer;
+    transition: color 0.01;
 }
+
+#project1:active, #project2:active, #project3:active {
+    color: #f0f0f094;
+}
+
 
 #project1Details, #project2Details, #project3Details {
     text-align: justify;
@@ -211,6 +217,16 @@ section h3 {
     background-color: #3b68c5;
     background-image: linear-gradient(315deg, #3b68c5 0%, #2752a2 74%);    
     cursor: pointer;
+}
+
+#school1:hover, #school2:hover, #school3:hover {
+    color: #f0f0f094;
+}
+
+.schoolMain {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50%;
 }
 
 #school1ModalContent, #school2ModalContent, #school3ModalContent {

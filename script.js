@@ -1,4 +1,4 @@
-// This code deals header margin-top, div height and scrolling adjustment
+// This code deals with header margin, div height and scrolling adjustment
 
 const { createApp, onMounted, ref } = Vue;
 
@@ -6,7 +6,7 @@ createApp({
   setup() {
     const navHeight = ref(0);
 
-    // This part is about responsive header margin-top
+    // This part is about responsive top margin of header
 
     const updateHeaderMargin = () => {
       let nav = document.querySelector('nav');
@@ -19,7 +19,7 @@ createApp({
       }, 100);
     };
     
-    // This part is about responsive div height
+    // This part is about responsive and equal height of div
 
     const updateSchoolHeights = () => {
       let school1 = document.querySelector('#school1');
