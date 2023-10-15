@@ -20,14 +20,14 @@
 
         <nav class="nav">
             <ul>
-                <li><a href="#About" onclick="scrollToAbout()">About</a></li>
-                <li><a href="#Experience" onclick="scrollToExperience()">Experience</a></li>
-                <li><a href="#Education" onclick="scrollToEducation()">Education</a></li>
+                <li><a href="#About" @click="scrollToAbout">About</a></li>
+                <li><a href="#Experience" @click="scrollToExperience">Experience</a></li>
+                <li><a href="#Education" @click="scrollToEducation">Education</a></li>
             </ul>
         </nav>
 
         <header class="header">
-            <img src="Profile.webp" alt="Picture of Patrick Ancajas"/>
+            <img id="profile" src="Profile.webp" alt="Picture of Patrick Ancajas"/>
             <div>
                 <h1 class="display-1">Patrick Ancajas</h1>
                 <p class="display-6">Computer Science Student</p>
@@ -116,7 +116,7 @@
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
                             <div class="modal-content" id="school3ModalContent">
                                 <div class="modal-header">
-                                    <h1 class="modal-title" id="school1ModalLabel">Highschool</h1>
+                                    <h1 class="modal-title" id="school2ModalLabel">Highschool</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
@@ -156,7 +156,7 @@
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
                             <div class="modal-content" id="school3ModalContent">
                                 <div class="modal-header">
-                                    <h1 class="modal-title" id="school1ModalLabel">Elementary</h1>
+                                    <h1 class="modal-title" id="school3ModalLabel">Elementary</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">

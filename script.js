@@ -1,7 +1,9 @@
-const { createApp, onMounted } = Vue;
+const { createApp, onMounted, ref } = Vue;
 
 createApp({
   setup() {
+    const navHeight = ref(0);
+
     const updateHeaderMargin = () => {
       let nav = document.querySelector('nav');
       let header = document.querySelector('header');
@@ -44,47 +46,23 @@ createApp({
       updateHeaderMargin();
       updateSchoolHeights();
     });
+
+    const scrollToSection = (sectionId) => {
+      let element = document.querySelector(sectionId);
+      let navHeight = document.querySelector('nav').offsetHeight;
+      if (element) {
+        const top = element.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({
+          top: top - navHeight,
+          behavior: "smooth",
+        });
+      }
+    };
+
+    return {
+      scrollToAbout: () => scrollToSection('#about'),
+      scrollToExperience: () => scrollToSection('#experience'),
+      scrollToEducation: () => scrollToSection('#education'),
+    };
   },
 }).mount('#app');
-
-function scrollToAbout() {
-  let element = document.querySelector('#about');
-  let nav = document.querySelector('nav');
-  let offset = nav.offsetHeight;
-
-  if (element) {
-    const top = element.getBoundingClientRect().top + window.scrollY;
-    window.scrollTo({
-      top: top - offset,
-      behavior: "smooth",
-    });
-  }
-}
-
-function scrollToExperience() {
-  let element = document.querySelector('#experience');
-  let nav = document.querySelector('nav');
-  let offset = nav.offsetHeight;
-
-  if (element) {
-    const top = element.getBoundingClientRect().top + window.scrollY;
-    window.scrollTo({
-      top: top - offset,
-      behavior: "smooth",
-    });
-  }
-}
-
-function scrollToEducation() {
-  let element = document.querySelector('#education');
-  let nav = document.querySelector('nav');
-  let offset = nav.offsetHeight;
-
-  if (element) {
-    const top = element.getBoundingClientRect().top + window.scrollY;
-    window.scrollTo({
-      top: top - offset,
-      behavior: "smooth",
-    });
-  }
-}
