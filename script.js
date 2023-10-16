@@ -26,21 +26,39 @@ createApp({
       let school2 = document.querySelector('#school2');
       let school3 = document.querySelector('#school3');
 
+      let school1Title = document.querySelector('#school1Title');
+      let school2Title = document.querySelector('#school2Title');
+      let school3Title = document.querySelector('#school3Title');
+
       school1.style.height = 'auto';
       school2.style.height = 'auto';
       school3.style.height = 'auto';
+
+      school1Title.style.height = 'auto';
+      school2Title.style.height = 'auto';
+      school3Title.style.height = 'auto';
 
       setTimeout(() => {
         let school1Height = school1.offsetHeight;
         let school2Height = school2.offsetHeight;
         let school3Height = school3.offsetHeight;
 
-        let maxHeight = Math.max(school1Height, school2Height, school3Height);
+        let school1TitleHeight = school1Title.offsetHeight;
+        let school2TitleHeight = school2Title.offsetHeight;
+        let school3TitleHeight = school3Title.offsetHeight;
 
-        school1.style.height = `${maxHeight}px`;
-        school2.style.height = `${maxHeight}px`;
-        school3.style.height = `${maxHeight}px`;
-      }, 100);
+        let schoolMaxHeight = Math.max(school1Height, school2Height, school3Height);
+
+        let schoolTitleMaxHeight = Math.max(school1TitleHeight, school2TitleHeight, school3TitleHeight);
+
+        school1.style.height = `${schoolMaxHeight}px`;
+        school2.style.height = `${schoolMaxHeight}px`;
+        school3.style.height = `${schoolMaxHeight}px`;
+
+        school1Title.style.height = `${schoolTitleMaxHeight}px`;
+        school2Title.style.height = `${schoolTitleMaxHeight}px`;
+        school3Title.style.height = `${schoolTitleMaxHeight}px`;
+      }, 50);
     };
 
     // This part is about scrolling adjustment

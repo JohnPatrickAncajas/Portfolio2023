@@ -223,12 +223,6 @@ section h3 {
     color: #f0f0f094;
 }
 
-.schoolMain {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 50%;
-}
-
 #school1ModalContent, #school2ModalContent, #school3ModalContent {
     color: #000000;
 }
